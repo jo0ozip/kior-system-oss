@@ -7,10 +7,6 @@
 [![Blog](https://img.shields.io/badge/blog-ko--o.tistory.com-lightgrey?logo=tistory)](https://ko-o.tistory.com)
 
 </div>
-
----
-<br>
-<br>
 <br>
 <br>
 <br>
@@ -24,9 +20,6 @@
 > building reliable and standardized environments through configuration and automation.
 
 ---
-<br>
-<br>
-<br>
 <br>
 <br>
 ## 🔗 블로그 (Blog)
