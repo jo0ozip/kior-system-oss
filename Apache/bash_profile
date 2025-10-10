@@ -1,0 +1,38 @@
+######################################################
+#   Bash ENV                  @BLOG_KIOR (kior-system)
+######################################################
+EDITOR=vi
+export EDITOR
+set -o vi
+umask 077
+export PS1="[\u@\h:\$PWD]$ "
+
+######################################################
+#   Apache ENV                @BLOG_KIOR (kior-system)
+######################################################
+export APACHE_HOME=""
+export APACHE_ENGINE_HOME=""
+export APACHE_LIBS_HOME="${APACHE_HOME}/apache-libs"
+export APACHE_LOG_HOME=""
+
+export VER_OPENSSL=""
+export VER_PCRE2=""
+export VER_APR=""
+export VER_APRUTIL=""
+
+export OPENSSL_HOME="${APACHE_LIBS_HOME}/${VER_OPENSSL}"
+export PCRE_HOME="${APACHE_LIBS_HOME}/${VER_PCRE2}"
+export APR_HOME="${APACHE_LIBS_HOME}/${VER_APR}"
+export APRUTIL_HOME="${APACHE_LIBS_HOME}/${VER_APRUTIL}"
+
+export PATH="${APACHE_ENGINE_HOME}/bin:${PATH}"
+export LD_LIBRARY_PATH="${OPENSSL_HOME}/lib64:${PCRE_HOME}/lib:\
+	${APR_HOME}/lib:${APRUTIL_HOME}/lib:${LD_LIBRARY_PATH}"
+
+######################################################
+#   Apache ALIAS              @BLOG_KIOR (kior-system)
+######################################################
+alias ahome='cd ${APACHE_ENGINE_HOME}'
+alias abin='cd ${APACHE_ENGINE_HOME}/bin'
+alias acfg='cd ${APACHE_ENGINE_HOME}/conf'
+alias alog='cd ${APACHE_LOG_HOME}'
