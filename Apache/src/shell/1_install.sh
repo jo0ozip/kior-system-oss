@@ -112,8 +112,8 @@ echo " ✔ APR-util build completed."
 #################################################
 echo "[STEP 4/5] Building PCRE..."
 (
-  	cd ${APACHE_HOME}/tarballs/${VER_PCRE}
-  	./configure --prefix=${APACHE_LIBS_HOME}/${VER_PCRE} \
+  	cd ${APACHE_HOME}/tarballs/${VER_PCRE2}
+  	./configure --prefix=${APACHE_LIBS_HOME}/${VER_PCRE2} \
 	      > configure.log 2>&1 &
 	pid=$!	
 	spinner $pid
